@@ -6,7 +6,7 @@ A simple RESTful API to create and manage patient appointments. Built with Node.
 - Create patients and appointments
 - List patients and appointments
 - Input validation and basic error responses
-- Swagger/OpenAPI documentation
+- Swagger documentation
 - MVC-style structure with separated app/server
 
 ### Tech Stack
@@ -97,17 +97,9 @@ Content-Type: application/json
 }
 ```
 
-### Common Issues
-- Port already in use (EADDRINUSE): stop prior Node processes or change `PORT` in `.env`.
-- MongoDB connection error: ensure `MONGODB_URI` is valid (starts with `mongodb://` or `mongodb+srv://`).
-- `.env` visible on GitHub: add `.env` to `.gitignore`, then run `git rm --cached .env` and commit again.
-
 ### Scripts
 - `npm run dev`  Start in development (ts-node)
 - `npm start`    Start in production-like mode (ts-node)
 
-### Notes
-- No build step is required; the app runs TypeScript directly via ts-node.
-- Keep `.env` secrets out of version control.
 
 
